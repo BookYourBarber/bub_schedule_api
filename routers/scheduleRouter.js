@@ -7,6 +7,7 @@ const moment = require('moment');
 // }];
 
 const day = [{
+    day_id:1,
     barber_id: 2,
     schedule_id: 1,
     //year, month, day
@@ -28,6 +29,7 @@ const day = [{
     type: "Working"
 },
 {
+    day_id:2,
     barber_id: 2,
     schedule_id: 1,
     //year, month, day
@@ -49,6 +51,7 @@ const day = [{
       type: "Closed"
 },
 {
+    day_id:3,
     barber_id: 2,
     schedule_id: 1,
     //year, month, day
@@ -70,6 +73,7 @@ const day = [{
       type: "Working"
 },
 {
+    day_id:4,
     barber_id: 3,
     schedule_id: 1,
     //year, month, day
