@@ -1,15 +1,9 @@
-const express = require('express')
-const cors = require('cors')
+const app = require("./app")
+const db = require('./models')
 
-const app = express()
 
-app.use(cors())
-app.use(express.json())
-
-const scheduleRouter = require("./routers/scheduleRouter")
-
-app.use("/schedule", scheduleRouter)
-
+db.sequelize.sync().then((req) => {
 app.listen(5002, () => {
   console.log('Server started on port 5002');
 });
+})
